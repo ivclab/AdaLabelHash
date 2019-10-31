@@ -28,5 +28,5 @@ Please cite following paper if these codes help your research:
 
 # Coming Soon ... 
 
-# Contact 
+## Contact 
 Please feel free to leave suggestions or comments to [Huei-Fang Yang](https://github.com/hueifang), [Cheng-Hao Tu](andytu28@iis.sinica.edu.tw), [Chu-Song Chen](song@iis.sinica.edu.tw)
