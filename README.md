@@ -23,7 +23,15 @@ If you want to evaluate the image retrieval performance, you need matlab as well
 
 ## Usage
 
+We present the instructions on training and testing on CIFAR10 as follows: 
+
 ### Preparing data
+
+* You will need to download the [pretrained CNN_F](https://drive.google.com/open?id=1HJ8UdIwNt_pGricAM7LfnVeGCgMZHIY4) and place `vgg_cnn_f_rmlast.h5` in `init_weights/`. 
+We convert the pretrained weights from Caffe so that we can load them using Keras. The Caffe version of weights are provided [here](https://gist.github.com/ksimonyan/a32c9063ec8e1118221a). 
+
+* For CIFAR10, we convert the numpy formats provided in the [official website](https://www.cs.toronto.edu/~kriz/cifar.html) into the png formats. 
+Download the [converted CIFAR10](https://drive.google.com/open?id=1Zy72S74AGDAX-OjLqR5NrVUmMCy653pT), extract the .zip file and place `cifar/` in `data/`. 
 
 ### Training 
 
