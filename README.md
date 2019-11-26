@@ -23,23 +23,23 @@ $ pip install -r requirements.txt
 ## Citation 
 Please cite following paper if these codes help your research:
     
-  @inproceedings{yang2019adaptive,
-    title={Adaptive Labeling For Hash Code Learning Via Neural Networks},
-    author={Yang, Huei-Fang and Tu, Cheng-Hao and Chen, Chu-Song},
-    booktitle={2019 IEEE International Conference on Image Processing (ICIP)},
-    pages={2244--2248},
-    year={2019},
-    organization={IEEE}
-  }
+    @inproceedings{yang2019adaptive,
+        title={Adaptive Labeling For Hash Code Learning Via Neural Networks},
+        author={Yang, Huei-Fang and Tu, Cheng-Hao and Chen, Chu-Song},
+        booktitle={2019 IEEE International Conference on Image Processing (ICIP)},
+        pages={2244--2248},
+        year={2019},
+        organization={IEEE}
+    }
 
-  @inproceedings{yang2019adaptive,
-    title={Adaptive Labeling for Deep Learning to Hash},
-    author={Yang, Huei-Fang and Tu, Cheng-Hao and Chen, Chu-Song},
-    booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops},
-    pages={0--0},
-    year={2019}
-  }
+    @inproceedings{yang2019adaptive,
+        title={Adaptive Labeling for Deep Learning to Hash},
+        author={Yang, Huei-Fang and Tu, Cheng-Hao and Chen, Chu-Song},
+        booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops},
+        pages={0--0},
+        year={2019}
+    }
 
 
-# Contact 
-Please feel free to leave suggestions or comments to [Huei-Fang Yang](https://github.com/hueifang), [Cheng-Hao Tu](andytu28@iis.sinica.edu.tw), [Chu-Song Chen](song@iis.sinica.edu.tw)
+## Contact 
+Please feel free to leave suggestions or comments to [Huei-Fang Yang](https://sites.google.com/site/hueifang/home), Cheng-Hao Tu(andytu28@iis.sinica.edu.tw), Chu-Song Chen(song@iis.sinica.edu.tw)
