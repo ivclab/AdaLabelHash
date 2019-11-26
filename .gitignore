@@ -1,0 +1,4 @@
+*.pyc
+data/cifar10
+init_weights/vgg_cnn_f_rmlast.h5
+experiments

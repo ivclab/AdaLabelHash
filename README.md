@@ -8,16 +8,28 @@ Learning-based hash has been widely used for large-scale similarity retrieval du
 
 
 ## Prerequisites 
-* python3.5
+* python2.7
 * keras2.3.0
 * tensorflow1.13.1
+* scikit-learn0.20.4
 
 Use the following command to install all requirements: 
 ```bash
 $ pip install -r requirements.txt
 ```
 
+If you want to evaluate the image retrieval performance, you need matlab as well. 
+
+
 ## Usage
+
+### Preparing data
+
+### Training 
+
+### Testing 
+
+### Evaluation (matlab required)
 
 
 ## Citation 

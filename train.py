@@ -5,6 +5,7 @@ import argparse
 import importlib
 import tensorflow as tf
 import keras.backend as K
+from pathlib2 import Path
 from keras import optimizers
 from keras.models import load_model
 from keras.engine import Model
@@ -46,7 +47,8 @@ def run_train(args, optim_args):
 
     ## Initial preparation
     model_dir = os.path.join(args.exp_dir, 'models', args.config_opt)
-    os.makedirs(model_dir, exist_ok=True)
+    # os.makedirs(model_dir, exist_ok=True)
+    Path(model_dir).mkdir(parents=True, exist_ok=True)
     model_check_point = ModelCheckpoint(os.path.join(model_dir, '{epoch:03d}.h5'),
                                         period=args.save_period)
     csv_logger        = CSVLogger(os.path.join(model_dir, 'log.csv'))
