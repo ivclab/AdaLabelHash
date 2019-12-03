@@ -33,6 +33,8 @@ We convert the pretrained weights from Caffe so that we can load them using Kera
 * For CIFAR10, we convert the numpy formats provided in the [official website](https://www.cs.toronto.edu/~kriz/cifar.html) into the png formats. 
 Download the [converted CIFAR10](https://drive.google.com/open?id=1Zy72S74AGDAX-OjLqR5NrVUmMCy653pT), extract the .zip file and place `cifar/` in `data/`. 
 
+## COMMING SOON ... 
+
 ### Training 
 
 ### Testing 
