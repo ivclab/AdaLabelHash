@@ -24,6 +24,8 @@ def parse_args():
                         help='List of samples for training')
     parser.add_argument('--num-classes', type=int, required=True,
                         help='Number of classes')
+    parser.add_argument('--postfix', type=str, default='',
+                        help='Postfix of the model dirs')
 
     if len(sys.argv) == 1:
         parser.print_help()
@@ -34,7 +36,7 @@ def parse_args():
 
 def run_test(args):
     ## Initial preparation
-    result_dir = os.path.join(args.exp_dir, 'models', '{}bits'.format(args.code_len))
+    result_dir = os.path.join(args.exp_dir, 'models', '{}bits{}'.format(args.code_len, args.postfix))
     model_path = os.path.join(result_dir, 'model.h5')
 
     ## Tensorflow config settings

@@ -66,6 +66,9 @@ def run_train(args, optim_args):
     model = construct_adalabelhash(args.code_len, (224, 224), args.num_classes,
                                    sim_name='innerprod')
 
+    if args.pretrain != '':
+        print('Load pretrained model: {}'.format(args.pretrain))
+        model.load_weights(args.pretrain, by_name=True)
     model.compile(loss=construct_triplet_loss(num_classes=args.num_classes, k=args.k),
                   optimizer=optimizer)
 
