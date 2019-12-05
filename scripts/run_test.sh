@@ -14,11 +14,4 @@ for CODE_LEN in $CODE_LENS; do
                    --code-len $CODE_LEN \
                    --sample-files sample_files/cifar10_supB_database.txt \
                    --sample-files sample_files/cifar10_supB_query.txt
-
-    # Run evaluation
-    (
-    cd scripts
-    MATLAB_COMMAND='run_eval({'${CODE_LEN}'}); exit'
-    matlab -r "${MATLAB_COMMAND}" -nojvm -nodesktop -nosplash
-    )
 done

@@ -33,14 +33,43 @@ We convert the pretrained weights from Caffe so that we can load them using Kera
 * For CIFAR10, we convert the numpy formats provided in the [official website](https://www.cs.toronto.edu/~kriz/cifar.html) into the png formats. 
 Download the [converted CIFAR10](https://drive.google.com/open?id=1Zy72S74AGDAX-OjLqR5NrVUmMCy653pT), extract the .zip file and place `cifar/` in `data/`. 
 
-## COMMING SOON ... 
-
 ### Training 
+
+Use the following command to train VGG-CNN-F on CIFAR10. 
+
+```bash
+$ bash scripts/run_train.sh '12 24 32 48' 0 
+```
+
+The first argument is a string of integers separated by whitespaces to indicate the hash code lengths for training. 
+In this case, we train 4 VGG-CNN-F models and, they have 12, 24, 32, 48 bits of hash codes, respectively. 
+The second argument is an integer indicates the gpu_id. 
+The training parameters such as learning rates, epochs, early stopping can be set in `setting.cfg`. 
 
 ### Testing 
 
+Use the following command to compute hash codes for CIFAR10. 
+
+```bash 
+$ bash scripts/run_test.sh '12 24 32 48' 0 
+``` 
+
+The arguments here are the same as those in the training script. 
+This script takes the list of images stored in `sample_files/cifar10_supB_query.txt` and `sample_files/cifar10_supB_query.txt`, computes binary codes for them, and store the results under `experiments/`. 
+We represent binary codes as numpy arrays and store them as .npy formats. 
+
 ### Evaluation (matlab required)
 
+Use the following command for computing mAPs on CIFAR10. 
+
+```bash 
+$ cd scripts/ 
+$ CODE_LEN=12    ## Use differnt code lengths for eavaluation
+$ MATLAB_COMMAND='run_eval({'${CODE_LEN}'}); exit'
+$ matlab -r "${MATLAB_COMMAND}" -nojvm -nodesktop -nosplash
+``` 
+
+Note that you need to specify the code lengh used for evaluation as `${CODE_LEN}`. 
 
 ## Citation 
 Please cite following paper if these codes help your research:
