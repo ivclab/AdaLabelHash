@@ -1,7 +1,7 @@
 # AdaLabelHash
 Official implmemtation of [ADAPTIVE LABELING FOR HASH CODE LEARNING VIA NEURAL NETWORKS](https://ieeexplore.ieee.org/document/8803011)
 
-Created by [Huei-Fang Yang](https://github.com/hueifang), [Cheng-Hao Tu](https://github.com/andytu28), Chu-Song Chen 
+Created by [Huei-Fang Yang](https://sites.google.com/site/hueifang/home), [Cheng-Hao Tu](https://github.com/andytu28), Chu-Song Chen 
 
 ## Introduction 
 Learning-based hash has been widely used for large-scale similarity retrieval due to the efficient computation and condensed storage of binary representations. In this paper, we propose AdaLabelHash, a hash function learning approach via neural networks. In AdaLabelHash, class label representations are adaptable during the network training. We express the labels as hypercube vertices in a K-dimensional space, and both the network weights and class label representations are updated in the learning process. As the label representations are explored from data, semantically similar categories will be assigned with the label representations that are close to each other in terms of Hamming distance in the label space. The label representations then serve as the desired output of the hash function learning so as to yield compact and discriminating binary hash codes via the network. AdaLabelHash is simple but effective, which can jointly learn label representations and infer compact binary codes from data. It is applicable to both supervised and semi-supervised learning of hash codes. Experimental results on standard benchmarks show the effectiveness of AdaLabelHash.
@@ -93,4 +93,4 @@ Please cite following paper if these codes help your research:
 
 
 ## Contact 
-Please feel free to leave suggestions or comments to [Huei-Fang Yang](https://sites.google.com/site/hueifang/home), Cheng-Hao Tu(andytu28@iis.sinica.edu.tw), Chu-Song Chen(song@iis.sinica.edu.tw)
+Please feel free to leave suggestions or comments to [Huei-Fang Yang](https://sites.google.com/site/hueifang/home), Cheng-Hao Tu(andytu28@iis.sinica.edu.tw), [Chu-Song Chen](https://www.iis.sinica.edu.tw/pages/song/)(song@iis.sinica.edu.tw)
